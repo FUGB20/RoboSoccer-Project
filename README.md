@@ -28,12 +28,6 @@ front bumper helps retain and control the ball.
 
 ## 🛠️ Main Components
 
-\---
-
-Component                           Role
-
-\---
-
 ESP32 NodeMCU (30-pin)              Main microcontroller and Bluetooth
 communication
 
@@ -49,7 +43,7 @@ L298N H-Bridge                      DC motor driver
 
 3D-printed chassis                  Mechanical structure
 
-## Metal ball caster                   Front passive support
+Metal ball caster                   Front passive support
 
 ## ⚙️ System Architecture
 
@@ -96,16 +90,12 @@ and converted into PWM values for motor speed control.
 
 ## 🔌 ESP32 ↔ L298N Pinout
 
-&#x20;   ESP32 GPIO L298N Pin   Function
-
-\---
-
-&#x20;      GPIO 14 IN1         Left motor direction
-GPIO 12 IN2         Left motor direction
-GPIO 25 ENA         Left motor PWM
-GPIO 32 IN3         Right motor direction
-GPIO 33 IN4         Right motor direction
-GPIO 26 ENB         Right motor PWM
+* GPIO 14 IN1         Left motor direction
+* GPIO 12 IN2         Left motor direction
+* GPIO 25 ENA         Left motor PWM
+* GPIO 32 IN3         Right motor direction
+* GPIO 33 IN4         Right motor direction
+* GPIO 26 ENB         Right motor PWM
 
 
 
@@ -118,10 +108,6 @@ nominal **11.1 V** supply.
 
 The battery powers the L298N motor driver, while the system uses the
 L298N board's 5 V output to supply the ESP32.
-
-> \\\*\\\*Important:\\\*\\\* Li-ion batteries require appropriate charging,
-> protection, and handling. Verify your specific battery holder, cells,
-> motor driver, and power wiring before operating the robot.
 
 ## 🧩 Mechanical Design
 
